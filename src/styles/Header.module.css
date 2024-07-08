@@ -1,0 +1,50 @@
+* {
+  margin: auto;
+  padding: 0;
+  font-family: 'Nunito';
+}
+
+.logo_contacts {
+  height: 150px;
+  width: 100%;
+  background-color: rgb(138, 138, 138);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__text {
+  display: flex;
+}
+
+.logo_div {
+  height: 100px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.logo_div h3 {
+  color: #fffa22;
+}
+
+.logo_div span {
+  line-height: 1.1;
+}
+
+.logo {
+  background-color: #fffa22;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
+
+.days__time {
+  display: flex;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+}
