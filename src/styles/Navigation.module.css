@@ -12,6 +12,28 @@
   color: #ffffff;
   font-size: 20px;
   cursor: pointer;
+  background: initial;
+  transition: color 0.3s ease;
+}
+
+.links button:hover {
+  color: #000000;
+}
+
+.links button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0.4turn, #fffa22, #bebb00);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.links button:hover::before {
+  opacity: 1;
 }
 
 .main {
@@ -30,7 +52,7 @@
 
 .about  {
   display: flex;
-  background: linear-gradient(0.4turn, #fffa22, #bebb00);
+  background-color: initial;
   width: 180px;
   height: 40px;
   transform: skewX(30deg);
@@ -44,7 +66,7 @@
 
 .renting {
   display: flex;
-  background: linear-gradient(0.4turn, #fffa22, #bebb00);
+  background-color: initial;
   width: 260px;
   height: 40px;
   transform: skewX(30deg);
@@ -58,7 +80,7 @@
 
 .contacts {
   display: flex;
-  background: linear-gradient(0.4turn, #fffa22, #bebb00);
+  background-color: initial;
   width: 160px;
   height: 40px;
   transform: skewX(30deg);

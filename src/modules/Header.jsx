@@ -5,9 +5,9 @@ const Header = () => {
     <>
       <div className={style.logo_contacts}>
         <div className={style.logo__text}>
-          <img src="" alt="logo" className={style.logo} />
+          <img src="/imgs/Logooo.svg" alt="logo" className={style.logo} />
           <div className={style.logo_div}>
-            <h3>logo name</h3>
+            <h3>ООО "Тепловоз"</h3>
             <span>Професиональные решения, качества и надежность</span>
           </div>
         </div>

@@ -1,15 +1,22 @@
 import style from "../styles/SwipePics.module.css";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SwipePics = () => {
   const imgsArr = [
-    "https://storage.yandexcloud.net/umn/images/optimized/66a75bd92765479da5220704d6327511_large@2x.jpg",
-    "https://workingplatform.ro/uploaded_files/00%20Nacele%20noi%202021/Nacele%20articulate%20diesel/HA%2041%20RTJ%20PRO/HA%2041%20RTJ%20PRO%20Image%201.jpg",
-    "https://fscl01.fonpit.de/userfiles/6675138/image/j7-pro-brazil-samsung-launch.png",
+    "https://tpmplus.ru/images/slider/slide-1.jpg",
+    "https://tpmplus.ru/images/slider/slide-2.jpg",
+    "https://tpmplus.ru/images/slider/slide-3.jpg",
   ];
   const [id, setId] = useState(0);
 
   let backgroundImg = {};
+  backgroundImg = {
+    backgroundImage: `url(${imgsArr[id]})`,
+  };
+
+  let hidden = {
+    display: "none",
+  };
 
   const prevPhoto = () => {
     if (id === 0) {
@@ -27,23 +34,33 @@ const SwipePics = () => {
     }
   };
 
-  backgroundImg = {
-    backgroundImage: `url(${imgsArr[id]})`,
-    transition: "3s, ease",
-  };
-
   return (
-    <div className={style.text_btn}>
-      <h1>АРЕНДА ТЕПЛОВОЗОВ</h1>
-      <a href="#">Подробнее</a>
-      <button className={style.leftArrow} onClick={() => prevPhoto()}>
-        <img src="/imgs/arrowLeft.svg" alt="arrow-left" />
-      </button>
-      <button className={style.rightArrow} onClick={() => nextPhoto()}>
-        <img src="/imgs/arrowRight.svg" alt="arrow-right" />
-      </button>
-      <div className={style.background} style={backgroundImg}></div>
-    </div>
+    <>
+      <div className={style.imgs_list}>
+        {imgsArr.map((v, i) => {
+          if (i === id) {
+            return (
+              <div className={style.background} key={i}>
+                <img className={style.backImg} src={v} alt="img" />
+                <div className={style.btn_text}>
+                  <h1>АРЕНДА ТЕПЛОВОЗОВ</h1>
+                  <a href="#">Подробнее</a>
+                </div>
+                <button className={style.leftArrow} onClick={() => prevPhoto()}>
+                  <img src="/imgs/arrowLeft.svg" alt="arrow-left" />
+                </button>
+                <button
+                  className={style.rightArrow}
+                  onClick={() => nextPhoto()}
+                >
+                  <img src="/imgs/arrowRight.svg" alt="arrow-right" />
+                </button>
+              </div>
+            );
+          }
+        })}
+      </div>
+    </>
   );
 };
 
