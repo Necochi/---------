@@ -1,0 +1,79 @@
+.links {
+  display: flex;
+  margin: auto;
+  height: 60px;
+  background: linear-gradient(#111111, #3a3a3a);
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.links button {
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  background-color: initial;
+  width: 140px;
+  height: 40px;
+  transform: skewX(30deg);
+  margin-right: 20px;
+}
+
+.main span {
+  transform: skewX(-30deg);
+  background-color: initial;
+}
+
+.about  {
+  display: flex;
+  background: linear-gradient(0.4turn, #fffa22, #bebb00);
+  width: 180px;
+  height: 40px;
+  transform: skewX(30deg);
+  margin-inline: 20px;
+}
+
+.about span {
+  transform: skewX(-30deg);
+  background-color: initial;
+}
+
+.renting {
+  display: flex;
+  background: linear-gradient(0.4turn, #fffa22, #bebb00);
+  width: 260px;
+  height: 40px;
+  transform: skewX(30deg);
+  margin-inline: 20px;
+}
+
+.renting span {
+  transform: skewX(-30deg);
+  background-color: initial;
+}
+
+.contacts {
+  display: flex;
+  background: linear-gradient(0.4turn, #fffa22, #bebb00);
+  width: 160px;
+  height: 40px;
+  transform: skewX(30deg);
+  margin-left: 20px;
+}
+
+.contacts span {
+  transform: skewX(-30deg);
+  background-color: initial;
+}
+
+.line {
+  background: linear-gradient(#fffa22, #a19f12);
+  width: 1px;
+  height: 40px;
+  transform: skewX(30deg);
+  margin-inline: 0;
+}

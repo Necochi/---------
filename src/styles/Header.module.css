@@ -1,13 +1,6 @@
-* {
-  margin: auto;
-  padding: 0;
-  font-family: 'Nunito';
-}
-
 .logo_contacts {
   height: 150px;
   width: 100%;
-  background-color: rgb(138, 138, 138);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,10 +16,12 @@
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+  width: 300px;
 }
 
 .logo_div h3 {
-  color: #fffa22;
+  margin-left: 0;
+  color: #ebe700;
 }
 
 .logo_div span {
@@ -34,17 +29,52 @@
 }
 
 .logo {
-  background-color: #fffa22;
+  background-color: #ebe700;
   border-radius: 100%;
   width: 60px;
   height: 60px;
 }
 
+.time_phone {
+  display: flex;
+}
+
 .days__time {
   display: flex;
+  margin-right: 50px;
+}
+
+.days__time img {
+  margin-right: 15px;
 }
 
 .days {
   display: flex;
   flex-direction: column;
+}
+
+.telephone {
+  display: flex;
+}
+
+.telephone img {
+  margin-right: 15px;
+}
+
+.phone_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone_text a {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.phone_text span button {
+  border: none;
+  background: none;
+  color: #ebe700;
+  text-decoration-line: underline;
 }

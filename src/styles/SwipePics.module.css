@@ -1,0 +1,69 @@
+.text_btn {
+  position: absolute;
+  height: 600px;
+  width: 100%;
+}
+
+.text_btn h1 {
+  position: absolute;
+  top: 25%;
+  left: 14%;
+  z-index: 1;
+  width: 500px;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 900;
+  background-color: initial;
+}
+
+.text_btn button {
+  border: #fffa22 2px solid;
+  width: 60px;
+  background-color: initial;
+  cursor: pointer;
+}
+
+.text_btn button img {
+  background: initial;
+}
+
+.text_btn a {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 14%;
+  width: 230px;
+  height: 70px;
+  background: linear-gradient(0.3turn, #fffa22, #bebb00);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.text_btn .leftArrow {
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+  right: 230px;
+}
+
+.text_btn .rightArrow {
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+  right: 150px;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
