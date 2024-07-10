@@ -1,0 +1,60 @@
+.form_flexDiv {
+  display: flex;
+  background: linear-gradient(
+    0.67turn,
+    #bebb00,
+    #fffa22 45%,
+    #202020 46%,
+    #0a0a0a
+  );
+  color: #ffffff;
+  height: auto;
+  max-width: 70%;
+  margin-inline: auto;
+  padding-block: 100px;
+  font-size: 18px;
+  margin-bottom: 60px;
+  justify-content: space-between;
+}
+
+.form_text {
+  width: 45%;
+  margin-left: 7%;
+  margin-right: 5%;
+  font-size: 20px;
+}
+
+.form_text h4 {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.form_div {
+  width: 45%;
+  margin-left: 10%;
+}
+
+.form_div form {
+  padding-right: 0;
+}
+
+.form_div form input {
+  width: 80%;
+  font-size: 18px;
+  margin-block: 5px;
+  padding-left: 15px;
+}
+
+.form_div form textarea {
+  width: 80%;
+  font-size: 18px;
+  resize: vertical;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+.checkbox {
+  width: 10%;
+}

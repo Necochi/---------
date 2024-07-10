@@ -1,10 +1,15 @@
-.background {
+.absolute {
+  height: 600px;
+  width: 100%;
+}
+
+.imgs_list {
   position: absolute;
   height: 600px;
   width: 100%;
 }
 
-.background h1 {
+.imgs_list h1 {
   position: absolute;
   top: 25%;
   left: 14%;
@@ -16,7 +21,7 @@
   background-color: initial;
 }
 
-.background button {
+.imgs_list button {
   border: #fffa22 2px solid;
   width: 60px;
   background-color: initial;
@@ -25,15 +30,15 @@
   border-radius: 10px;
 }
 
-.background button:hover {
+.imgs_list button:hover {
   background-color: #fffb2234;
 }
 
-.background button img {
+.imgs_list button img {
   background: initial;
 }
 
-.background a {
+.imgs_list a {
   display: flex;
   position: absolute;
   z-index: 1;
@@ -51,12 +56,12 @@
   transition: scale 0.2s ease-in-out;
 }
 
-.background a:hover {
+.imgs_list a:hover {
   scale: 1.05;
   background: linear-gradient(0.7turn, #fffa22, #bebb00);
 }
 
-.background .leftArrow {
+.imgs_list .leftArrow {
   position: absolute;
   z-index: 1;
   bottom: 50px;
@@ -68,7 +73,7 @@
   scale: 1.1;
 }
 
-.background .rightArrow {
+.imgs_list .rightArrow {
   position: absolute;
   z-index: 1;
   bottom: 50px;
@@ -80,13 +85,29 @@
   scale: 1.1;
 }
 
-.background .backImg {
+.imgs_list .backImg {
+  position: absolute;
   width: 100%;
   height: 600px;
   object-fit: cover;
 }
 
-@keyframes hiding {
+.nextImg {
+  animation-name: showing;
+  animation-duration: 2s;
+}
+
+.prevImg {
+  animation-name: hiding;
+  animation-duration: 2s;
+}
+
+@keyframes showing {
   0% {opacity: 0;}
   100% {opacity: 1;}
+}
+
+@keyframes hiding {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
 }

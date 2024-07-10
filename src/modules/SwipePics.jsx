@@ -8,57 +8,83 @@ const SwipePics = () => {
     "https://tpmplus.ru/images/slider/slide-3.jpg",
   ];
   const [id, setId] = useState(0);
-
-  let backgroundImg = {};
-  backgroundImg = {
-    backgroundImage: `url(${imgsArr[id]})`,
-  };
+  const [prevId, setPrevId] = useState(id);
+  const imgRef = useRef();
+  const imgRef2 = useRef();
+  const rightArrow = useRef();
+  const leftArrow = useRef();
 
   let hidden = {
-    display: "none",
+    opacity: "0",
   };
 
   const prevPhoto = () => {
     if (id === 0) {
+      setPrevId(id);
       setId(imgsArr.length - 1);
     } else {
+      setPrevId(id);
       setId(id - 1);
     }
   };
 
   const nextPhoto = () => {
     if (id === imgsArr.length - 1) {
+      setPrevId(id);
       setId(0);
     } else {
+      setPrevId(id);
       setId(id + 1);
     }
   };
 
   return (
     <>
-      <div className={style.imgs_list}>
-        {imgsArr.map((v, i) => {
-          if (i === id) {
-            return (
-              <div className={style.background} key={i}>
-                <img className={style.backImg} src={v} alt="img" />
-                <div className={style.btn_text}>
-                  <h1>АРЕНДА ТЕПЛОВОЗОВ</h1>
-                  <a href="#">Подробнее</a>
+      <div className={style.absolute}>
+        <div className={style.imgs_list}>
+          {imgsArr.map((v, i) => {
+            if (i === id) {
+              return (
+                <div key={i}>
+                  <img
+                    ref={imgRef}
+                    className={style.backImg}
+                    src={v}
+                    alt="img"
+                  />
                 </div>
-                <button className={style.leftArrow} onClick={() => prevPhoto()}>
-                  <img src="/imgs/arrowLeft.svg" alt="arrow-left" />
-                </button>
-                <button
-                  className={style.rightArrow}
-                  onClick={() => nextPhoto()}
-                >
-                  <img src="/imgs/arrowRight.svg" alt="arrow-right" />
-                </button>
-              </div>
-            );
-          }
-        })}
+              );
+            } else {
+              return (
+                <div style={hidden} key={i}>
+                  <img
+                    ref={imgRef2}
+                    className={style.backImg}
+                    src={v}
+                    alt="img"
+                  />
+                </div>
+              );
+            }
+          })}
+          <div className={style.btn_text}>
+            <h1>АРЕНДА ТЕПЛОВОЗОВ</h1>
+          </div>
+          <button
+            ref={leftArrow}
+            className={style.leftArrow}
+            onClick={() => prevPhoto()}
+          >
+            <img src="/imgs/arrowLeft.svg" alt="arrow-left" />
+          </button>
+          <button
+            ref={rightArrow}
+            className={style.rightArrow}
+            onClick={() => nextPhoto()}
+          >
+            <img src="/imgs/arrowRight.svg" alt="arrow-right" />
+          </button>
+        </div>
       </div>
     </>
   );

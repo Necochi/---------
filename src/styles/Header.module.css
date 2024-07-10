@@ -29,9 +29,12 @@
 .logo_div h3 {
   margin-left: 0;
   background: linear-gradient(0.3turn, #fffa22, #bebb00);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #0B2349;
+  color: #0b2349;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 .logo_div span {
@@ -46,7 +49,6 @@
 
 .time_phone {
   display: flex;
-
 }
 
 .days__time {
@@ -85,6 +87,6 @@
 .phone_text span button {
   border: none;
   background: none;
-  color: #ebe700;
+  color: #fffa22;
   text-decoration-line: underline;
 }

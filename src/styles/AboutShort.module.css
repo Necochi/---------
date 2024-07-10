@@ -1,0 +1,49 @@
+.about_flexDiv {
+  display: flex;
+  height: 600px;
+  margin: auto;
+  font-size: 18px;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.about_flexDiv img {
+  margin-right: 0;
+}
+
+.about_text {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: left;
+  margin-left: 5%;
+  height: 400px;
+}
+
+.about_text h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  background: linear-gradient(0.3turn, #fffa22, #bebb00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 0;
+}
+
+.about_text ul {
+  margin-left: 20px;
+}
+
+.about_text li::marker {
+  color: #fffa22;
+}
+
+.about_text a {
+  text-decoration: underline #fffa22;
+  background: linear-gradient(0.3turn, #fffa22, #bebb00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 0;
+}

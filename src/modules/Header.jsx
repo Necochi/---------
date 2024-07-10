@@ -7,7 +7,7 @@ const Header = () => {
         <div className={style.logo__text}>
           <img src="/imgs/Logooo.svg" alt="logo" className={style.logo} />
           <div className={style.logo_div}>
-            <h3>ООО "Тепловоз"</h3>
+            <h3>ПРОМТРАНС-СП</h3>
             <span>Професиональные решения, качества и надежность</span>
           </div>
         </div>
