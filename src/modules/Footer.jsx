@@ -13,7 +13,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={style.politic}>
-            <span>«Промтранс-СП» 2019-2024</span>
+            <span>© Промтранс-СП 2019-2024</span>
             <button>Политика обработки персональных данных</button>
           </div>
         </div>
