@@ -3,8 +3,8 @@
   background: linear-gradient(
     0.67turn,
     #bebb00,
-    #fffa22 45%,
-    #202020 46%,
+    #fffa22 50%,
+    #202020 50%,
     #0a0a0a
   );
   color: #ffffff;
@@ -40,21 +40,50 @@
   padding-right: 0;
 }
 
-.form_div form input {
+.form_div form .input {
   width: 80%;
+  height: 40px;
   font-size: 18px;
   margin-block: 5px;
   padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+}
+
+.form_div form .input::placeholder {
+  color: #7c7c7c;
 }
 
 .form_div form textarea {
+  min-height: 30px;
+  max-height: 200px;
+  height: 40px;
   width: 80%;
   font-size: 18px;
   resize: vertical;
   margin-top: 5px;
   padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  padding-top: 5px;
 }
 
-.checkbox {
-  width: 10%;
+.form_div form textarea::placeholder {
+  color: #7c7c7c;
+}
+
+.checkboxDiv {
+  margin-top: 5px;
+  margin-left: 0;
+  width: 85%;
+  display: flex;
+
+}
+
+.checkboxDiv label {
+  width: 90%;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #000000;
+  line-height: 15px;
 }

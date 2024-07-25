@@ -16,6 +16,7 @@
   z-index: 1;
   width: 500px;
   color: #ffffff;
+  text-shadow: 3px 2px 4px #000000;
   font-size: 60px;
   font-weight: 900;
   background-color: initial;
@@ -23,6 +24,7 @@
 
 .imgs_list button {
   border: #fffa22 2px solid;
+  height: 60px;
   width: 60px;
   background-color: initial;
   cursor: pointer;
@@ -103,11 +105,19 @@
 }
 
 @keyframes showing {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes hiding {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

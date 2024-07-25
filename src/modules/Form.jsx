@@ -1,4 +1,4 @@
-import style from "../styles/Form.module.css"
+import style from "../styles/Form.module.css";
 const Form = () => {
   return (
     <div className={style.form_flexDiv}>
@@ -9,16 +9,28 @@ const Form = () => {
       <div className={style.form_div}>
         <form action="#" method="post">
           <label htmlFor="text">
-          <input type="text" required placeholder="Ваше имя *" />
+            <input
+              type="text"
+              required
+              placeholder="Ваше имя *"
+              className={style.input}
+            />
           </label>
           <label htmlFor="tel">
-          <input type="tel" required placeholder="Ваш телефон *"/>
+            <input
+              type="tel"
+              required
+              placeholder="Ваш телефон *"
+              className={style.input}
+            />
           </label>
           <textarea cols="20" placeholder="Комментарий"></textarea>
-          <input сlassName={style.checkbox} type="checkbox" />
-          <label сlassName={style.checkboxLabel} htmlFor="checkbox">
-          Я даю согласие на обработку персонаьных данных
-          </label>
+          <div className={style.checkboxDiv}>
+            <input type="checkbox" />
+            <label htmlFor="checkbox">
+              Я даю согласие на обработку персональных данных
+            </label>
+          </div>
         </form>
       </div>
     </div>

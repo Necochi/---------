@@ -31,7 +31,7 @@ const Header = () => {
             <div className={style.telephone}>
               <img src="/imgs/phone.svg" alt="telephone" />
               <div className={style.phone_text}>
-                <a href="tel:+7 (xxx) xxx-xx-xx">+7 (xxx) xxx-xx-xx</a>
+                <a href="tel:+7 (xxx) xxx-xx-xx">+7 (916) 332-86-08</a>
                 <span>
                   <button>Перезвоните мне</button>
                 </span>

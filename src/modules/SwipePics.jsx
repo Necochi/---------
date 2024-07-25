@@ -3,9 +3,9 @@ import { useEffect, useRef, useState } from "react";
 
 const SwipePics = () => {
   const imgsArr = [
-    "https://tpmplus.ru/images/slider/slide-1.jpg",
-    "https://tpmplus.ru/images/slider/slide-2.jpg",
-    "https://tpmplus.ru/images/slider/slide-3.jpg",
+    "./imgs/Slide2.jpg",
+    "./imgs/Slide1.jpg",
+    "./imgs/Slide3.jpg",
   ];
   const [id, setId] = useState(0);
   const [prevId, setPrevId] = useState(id);
