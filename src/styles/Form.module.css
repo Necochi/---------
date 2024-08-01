@@ -9,7 +9,8 @@
   );
   color: #ffffff;
   height: auto;
-  max-width: 80%;
+  width: 80%;
+  max-width: 1400px;
   margin-inline: auto;
   padding-block: 70px;
   font-size: 18px;
@@ -100,7 +101,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding-left: 120px;
+  padding-left: 30%;
   background: linear-gradient(
     0.1turn,
     #202020 50%,
@@ -128,4 +129,86 @@
     #202020 50%,
     #0a0a0a
   );
+}
+
+@media screen and (width < 1100px) {
+  .form_flexDiv {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (width < 920px) {
+  .form_flexDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+    0.4turn,
+    #bebb00,
+    #fffa22 50%,
+    #202020 50%,
+    #0a0a0a
+  );
+  margin-bottom: 0;
+  }
+
+  .form_flexDiv .form_text {
+    text-align: center;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .form_flexDiv .form_div {
+    margin: auto;
+  }
+
+  .form_flexDiv .btn_div button {
+    margin: auto;
+    color: #000000;
+    background: linear-gradient(
+      0.4turn,
+      #bebb00,
+      #fffa22 50%
+    );
+    padding-left: 36%;
+  }
+
+  .form_flexDiv .btn_div button:hover {
+    background: linear-gradient(
+      0.1turn,
+      #bebb00 30%,
+      #fffa22 60%
+    );
+  }
+
+  .form_flexDiv .btn_div button img {
+    display: none;
+  }
+
+  .checkboxDiv {
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .checkboxDiv label {
+    color: #ffffff;
+    padding-left: 0;
+  }
+
+  .form_div {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .form_div form {
+    width: 90%;
+    margin: auto;
+  }
+
+  .form_div .btn_div {
+    margin-inline: auto;
+    width: 75%;
+  }
 }

@@ -57,3 +57,34 @@
 .about_text p {
   margin: 0;
 }
+
+
+
+@media screen and (width < 1100px) {
+  .about_flexDiv {
+    height: 300px;
+  }
+
+  .about_flexDiv img {
+    display: none;
+  }
+
+  .about_text {
+    height: initial;
+  }
+
+  .about_text h2 {
+    margin-bottom: 5px;
+  }
+
+  .about_text ul {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (width < 920px) {
+  .about_flexDiv {
+    width: 100%;
+  }
+}
