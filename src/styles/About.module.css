@@ -6,11 +6,12 @@
 
 .short_text {
   margin-inline: auto;
+  margin-top: -30px;
 }
 
 .our_services h3,
 .most_popular_objs h3 {
-  font-size: 50px;
+  font-size: 36px;
   font-weight: 800;
   background: linear-gradient(0.3turn, #fffa22 0%, #bebb00 50%);
   background-clip: text;

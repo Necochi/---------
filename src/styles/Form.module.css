@@ -11,7 +11,7 @@
   height: auto;
   max-width: 80%;
   margin-inline: auto;
-  padding-block: 100px;
+  padding-block: 70px;
   font-size: 18px;
   margin-bottom: 60px;
   justify-content: space-between;
@@ -86,4 +86,46 @@
   padding-left: 10px;
   color: #000000;
   line-height: 15px;
+}
+
+.form_flexDiv .btn_div {
+  text-align: center;
+  width: 85%;
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.form_flexDiv .btn_div button {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+  background: linear-gradient(
+    0.1turn,
+    #202020 50%,
+    #0a0a0a
+  );
+  color: #fffa22;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: font-size 0.3s ease;
+}
+
+.form_flexDiv .btn_div button img {
+  margin-right: 30px;
+  transition: 0.3s ease;
+}
+
+.form_flexDiv .btn_div button:hover img {
+  margin-right: 10px;
+}
+
+.form_flexDiv .btn_div button:hover {
+  background: linear-gradient(
+    0.5turn,
+    #202020 50%,
+    #0a0a0a
+  );
 }
