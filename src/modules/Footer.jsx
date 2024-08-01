@@ -22,13 +22,13 @@ const Footer = () => {
           <div className={style.info}>
             <ul>
               <li>
-                <a href="#">О компании</a>
+                <a href="/about">О компании</a>
               </li>
               <li>
-                <a href="#">Аренда тепловозов</a>
+                <a href="/booking">Аренда тепловозов</a>
               </li>
               <li>
-                <a href="#">Контакты</a>
+                <a href="/contact">Контакты</a>
               </li>
             </ul>
           </div>
@@ -39,7 +39,7 @@ const Footer = () => {
             <ul>
               <li>
                 <img src="/imgs/phone.svg" alt="phone" />
-                <a href="tel:+7 (xxx) xxx-xx-xx">
+                <a href="tel:+7 (916) 332-86-08">
                   <b>+7 (916) 332-86-08</b>
                 </a>
               </li>

@@ -1,27 +1,30 @@
 import style from "../styles/Navigation.module.css";
+import { NavLink } from "react-router-dom";
+const links = [
+  { path: "/", text: "Главная" },
+  { path: "about", text: "О компании" },
+  { path: "booking", text: "Аренда тепловозов" },
+  { path: "contact", text: "Контакты" },
+];
 
 const Navigation = () => {
-  let activeLink = {
-    background: "linear-gradient(0.4turn, #fffa22, #bebb00)",
-  };
-
   return (
     <div className={style.links}>
-      <button className={style.main}>
-        <span>Главная</span>
-      </button>
+      <NavLink to={links[0].path} className={style.main}>
+        <span>{links[0].text}</span>
+      </NavLink>
       <span className={style.line}></span>
-      <button className={style.about}>
-        <span>О компании</span>
-      </button>
+      <NavLink to={links[1].path} className={style.about}>
+        <span>{links[1].text}</span>
+      </NavLink>
       <span className={style.line}></span>
-      <button className={style.renting}>
-        <span>Аренда тепловозов</span>
-      </button>
+      <NavLink to={links[2].path} className={style.renting}>
+        <span>{links[2].text}</span>
+      </NavLink>
       <span className={style.line}></span>
-      <button className={style.contacts}>
-        <span>Контакты</span>
-      </button>
+      <NavLink to={links[3].path} className={style.contacts}>
+        <span>{links[3].text}</span>
+      </NavLink>
     </div>
   );
 };
