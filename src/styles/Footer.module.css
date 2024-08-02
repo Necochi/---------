@@ -31,7 +31,7 @@
 
 .footer_main {
   font-size: 18px;
-  height: 280px;
+  height: auto;
   background: linear-gradient(1turn, #111111, #3a3a3a);
   color: #ffffff;
 }
@@ -102,6 +102,7 @@
 .about_div ul {
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .about_div li {
@@ -113,6 +114,8 @@
   flex-direction: column;
   font-size: 16px;
   margin-top: 10px;
+  width: 400px;
+  text-align: left;
 }
 
 .contacts_div h5 {
@@ -125,10 +128,10 @@
   flex-direction: column;
 }
 
-.contacts_div .contacts_div li {
+.contacts_div .contacts ul li {
   display: flex;
-  margin-block: 8px;
-
+  margin-block: 5px;
+  margin-left: 0;
 }
 
 .contacts_div .contacts li * {
@@ -144,17 +147,17 @@
 }
 
 .contacts_div .contacts .time {
-  display: flex;
-  flex-direction: column;
   margin-left: 0;
+  width: 200px;
+  margin-inline: auto;
 }
-
 
 @media screen and (width < 1100px) {
   .footer_block {
     flex-direction: column;
+    font-size: 16px;
   }
-  
+
   .footer_main {
     height: auto;
   }
@@ -163,9 +166,13 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin: auto;
     width: 700px;
+  }
+
+  .footer_main .logo_politic .logo h4 {
+    margin-left: 0;
   }
 
   .footer_main .logo div {
@@ -178,6 +185,10 @@
 
   .logo_politic .politic {
     margin-left: auto;
+  }
+
+  .about_div {
+    margin-bottom: 10px;
   }
 
   .about_div h5 {
@@ -201,11 +212,17 @@
     margin-bottom: 10px;
   }
 
+  .footer_main .contacts_div ul li {
+    margin: auto;
+    margin-block: 10px;
+  }
+
   .footer_main .contacts_div li {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-block: 10px;
+    margin: auto;
   }
 
   .footer_main .contacts_div li img {
@@ -214,11 +231,21 @@
   }
 }
 
-
 @media screen and (width < 920px) {
   .footer_main .logo_politic {
-    margin:auto;
+    margin: auto;
     width: 700px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+
+  .footer_main .logo_politic .logo img  {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about_div {
+    margin: 20px;
   }
 
   .about_div ul {
@@ -228,7 +255,6 @@
   .contacts_div ul li {
     width: 400px;
   }
-
 }
 
 @media screen and (width < 770px) {
@@ -236,12 +262,29 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
+    width: auto;
+  }
+
+  .footer_main .logo_politic .logo {
+    display: block;
+  }
+
+  .footer_main .logo_politic .logo h4 {
+    margin-left: 20px;
+  }
+
+  .footer_main .logo_politic .logo span {
+    margin: auto;
   }
 
   .footer_main .contacts_div {
     align-items: center;
     width: 300px;
     margin: auto;
+  }
+
+  .footer_main .contacts_div h5 {
+    margin-bottom: 20px;
   }
 
   .footer_main .contacts_div ul {
@@ -254,5 +297,11 @@
     display: flex;
     width: 80%;
     margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .contacts_div .contacts .time {
+    width: 190px;
+    margin: auto;
   }
 }
