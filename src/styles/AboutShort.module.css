@@ -71,6 +71,12 @@
   .about_text {
     height: initial;
     font-size: 16px;
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+  .about_text p {
+    margin-left: 2%;
   }
 
   .about_text h2 {
@@ -87,5 +93,9 @@
 @media screen and (width < 920px) {
   .about_flexDiv {
     width: 100%;
+  }
+
+  .about_text {
+    margin-left: 2%;
   }
 }

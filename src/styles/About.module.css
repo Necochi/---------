@@ -22,7 +22,7 @@
 
 .our_services ul,
 .most_popular_objs ul {
-  margin-left: 40px;
+  margin-left: 4%;
 }
 
 .our_services li,
@@ -37,4 +37,36 @@
 
 .most_popular_objs {
   margin-bottom: 60px;
+}
+
+@media screen and (width < 1100px) {
+  .about_main_div {
+    margin-top: 50px;
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .short_text span {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .our_services h3,
+  .most_popular_objs h3 {
+    font-size: 28px;
+  }
+
+  .our_services ul,
+  .most_popular_objs ul {
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (width < 920px) {
+  .about_main_div {
+    width: auto;
+    margin-left: 2%;
+    margin-right: 10px;
+  }
 }

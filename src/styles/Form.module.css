@@ -159,6 +159,14 @@
     margin-bottom: 10px;
   }
 
+  .form_text h4 {
+    font-size: 28px;
+  }
+
+  .form_text p {
+    font-size: 16px;
+  }
+
   .form_flexDiv .form_div {
     margin: auto;
   }
