@@ -98,12 +98,12 @@
 @media screen and (width < 920px) {
   .imgs_list .backImg {
     position: absolute;
-    object-fit: contain;
-    height: auto;
+    object-fit: cover;
+    height: 300px;
   }
 
   .absolute {
-    margin-bottom: 35%;
+    margin-bottom: 330px;
     height: auto;
   }
 
@@ -127,6 +127,17 @@
 }
 
 @media screen and (width < 690px) {
+
+  .imgs_list .backImg {
+    position: absolute;
+    object-fit: cover;
+    height: 200px;
+  }
+
+  .absolute {
+    margin-bottom: 230px;
+    height: auto;
+  }
   
   .imgs_list button {
     height: 50px;
@@ -157,7 +168,6 @@
   .imgs_list button {
     height: 40px;
     width: 40px;
-    top: -380px;
   }
 
   .imgs_list .leftArrow {
@@ -169,7 +179,6 @@
   }
 
   .imgs_list h1 {
-    top: 5%;
     font-size: 28px;
     width: 200px;
   }
@@ -180,9 +189,5 @@
     left: 7%;
     font-size: 24px;
     width: 200px;
-  }
-
-  .imgs_list button {
-    top: -380px;
   }
 }
