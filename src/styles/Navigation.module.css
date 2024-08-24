@@ -7,7 +7,10 @@
   font-size: 20px;
 }
 
-.links .main, .about, .renting, .contacts {
+.links .main,
+.about,
+.renting,
+.contacts {
   border: none;
   color: #ffffff;
   font-size: 20px;
@@ -27,7 +30,7 @@
 .about::before,
 .renting::before,
 .contacts::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -59,7 +62,7 @@
   background-color: initial;
 }
 
-.about  {
+.about {
   display: flex;
   background-color: initial;
   width: 180px;
@@ -107,4 +110,109 @@
   height: 40px;
   transform: skewX(30deg);
   margin-inline: 0;
+}
+
+.close_btn_nav {
+  display: none;
+}
+
+@media screen and (width < 945px) {
+  .links {
+    position: absolute;
+    flex-direction: column;
+    height: 180px;
+    z-index: 5;
+    right: 0;
+  }
+
+  .main,
+  .about,
+  .renting,
+  .contacts,
+  .main span,
+  .about span,
+  .renting span,
+  .contacts span {
+    margin-left: 30px;
+    transform: none;
+  }
+
+  .links a {
+    height: 30px;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .links .line {
+    display: none;
+  }
+
+  .links .main::before,
+  .about::before,
+  .renting::before,
+  .contacts::before {
+    display: none;
+  }
+
+  .links .main:hover,
+.about:hover,
+.renting:hover,
+.contacts:hover {
+  background-color: #fffa22;
+}
+
+.close_btn_nav {
+  position: absolute;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  background-color: initial;
+  right: 0;
+  top: 104                                                                   px;
+  border: 2px solid #fff;
+}
+
+/* .close_btn_nav :first-child {
+  position: absolute;
+  z-index: 11;
+  width: 2px;
+  height: 38px;
+  transform: rotate(42deg);
+  background-color: #ffffff;
+  right: 12px;
+  top: -6px;
+} */
+
+/* .close_btn_nav :last-child {
+  position: absolute;
+  z-index: 11;
+  width: 2px;
+  height: 38px;
+  transform: rotate(138deg);
+  background-color: #ffffff;
+  right: 12px;
+  top: -6px;
+} */
+
+/* .close_btn_nav :first-child {
+  position: absolute;
+  z-index: 11;
+  width: 2px;
+  height: 20px;
+  transform: rotate(90deg);
+  background-color: #ffffff;
+  right: 12px;
+  top: -2px;
+}
+
+.close_btn_nav :last-child {
+  position: absolute;
+  z-index: 11;
+  width: 2px;
+  height: 20px;
+  transform: rotate(90deg);
+  background-color: #ffffff;
+  right: 12px;
+  top: 8px;
+} */
 }

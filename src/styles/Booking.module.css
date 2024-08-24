@@ -1,0 +1,45 @@
+.booking_main {
+  margin: auto;
+  padding-block: 50px;
+  width: 80%;
+}
+
+.booking_main h1 {
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(0.3turn, #fffa22, #bebb00 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.booking_main p, .booking_main li {
+  font-size: 18px;
+}
+
+.booking_main p {
+  margin-bottom: 10px;
+}
+
+.booking_main .last_p {
+  margin-bottom: 20px;
+}
+
+.booking_main li::marker {
+  color: #fffa22;
+}
+
+.booking_main li {
+  margin-top: 10px;
+  margin-left: 4%;
+}
+
+@media screen and (width < 920px) {
+  .booking_main {
+    margin-left: 2%;
+    margin-right: 0;
+    width: 100%;
+  }
+
+}

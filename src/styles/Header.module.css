@@ -188,3 +188,57 @@
   opacity: 70%;
   z-index: 10;
 }
+
+@media screen and (width < 990px) {
+
+  .logo_contacts {
+    height: 100px;
+  }
+
+  .time_phone .days__time {
+    width: 210px;
+    margin: 0;
+  }
+
+  .time_phone .days__time img {
+    margin-left: 0;
+  }
+
+  .time_phone .days {
+    margin: 0;
+  }
+
+  .time_phone .days__time {
+    display: none;
+  }
+
+  .logo__text img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .logo_div {
+    width: 250px;
+  }
+
+  .logo_div h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .logo_div span {
+    font-size: 14px;
+    margin-top: 5px;
+  };
+
+}
+
+@media screen and (width < 600px) {
+  .time_phone .telephone {
+    display: none;
+  }
+
+  .logo_contacts .time_days {
+    display: none;
+  }
+}

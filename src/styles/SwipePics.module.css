@@ -94,30 +94,94 @@
   object-fit: cover;
 }
 
-.nextImg {
-  animation-name: showing;
-  animation-duration: 2s;
+
+@media screen and (width < 920px) {
+  .imgs_list .backImg {
+    position: absolute;
+    object-fit: contain;
+    height: auto;
+  }
+
+  .absolute {
+    margin-bottom: 35%;
+    height: auto;
+  }
+
+  .imgs_list h1 {
+    top: 10%;
+    font-size: 40px;
+    width: 200px;
+  }
+
+  .imgs_list button {
+    top: -200px;
+  }
+
+  .imgs_list .leftArrow {
+    right: 200px;
+  }
+
+  .imgs_list .rightArrow {
+    right: 130px;
+  }
 }
 
-.prevImg {
-  animation-name: hiding;
-  animation-duration: 2s;
+@media screen and (width < 690px) {
+  .imgs_list button {
+    height: 50px;
+    width: 50px;
+    top: -280px;
+  }
+
+  .imgs_list .leftArrow {
+    right: 150px;
+  }
+
+  .imgs_list .rightArrow {
+    right: 90px;
+  }
+
+  .imgs_list h1 {
+    top: 10%;
+    font-size: 32px;
+    width: 200px;
+  }
 }
 
-@keyframes showing {
-  0% {
-    opacity: 0;
+@media screen and (width < 550px) {
+  .imgs_list button img {
+    width: 30px;
   }
-  100% {
-    opacity: 1;
+
+  .imgs_list button {
+    height: 40px;
+    width: 40px;
+    top: -380px;
+  }
+
+  .imgs_list .leftArrow {
+    right: 90px;
+  }
+
+  .imgs_list .rightArrow {
+    right: 40px;
+  }
+
+  .imgs_list h1 {
+    top: 5%;
+    font-size: 28px;
+    width: 200px;
   }
 }
 
-@keyframes hiding {
-  0% {
-    opacity: 1;
+@media screen and (width < 400px) {
+  .imgs_list h1 {
+    left: 7%;
+    font-size: 24px;
+    width: 200px;
   }
-  100% {
-    opacity: 0;
+
+  .imgs_list button {
+    top: -400px;
   }
 }

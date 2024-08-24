@@ -55,7 +55,7 @@ const Header = () => {
             <span>Професиональные решения, качества и надежность</span>
           </div>
         </div>
-        <div>
+        <div className={style.time_days}>
           <div className={style.time_phone}>
             <div className={style.days__time}>
               <img

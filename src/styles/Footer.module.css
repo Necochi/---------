@@ -148,7 +148,7 @@
 
 .contacts_div .contacts .time {
   margin-left: 0;
-  width: 200px;
+  width: 400px;
   margin-inline: auto;
 }
 
@@ -229,6 +229,10 @@
     margin: auto;
     margin-bottom: 5px;
   }
+
+  .contacts_div .contacts .time {
+    width: 180px;
+  }
 }
 
 @media screen and (width < 920px) {
@@ -239,7 +243,7 @@
     flex-direction: column;
   }
 
-  .footer_main .logo_politic .logo img  {
+  .footer_main .logo_politic .logo img {
     width: 100px;
     height: 100px;
   }
@@ -255,6 +259,7 @@
   .contacts_div ul li {
     width: 400px;
   }
+
 }
 
 @media screen and (width < 770px) {
@@ -270,7 +275,7 @@
   }
 
   .footer_main .logo_politic .logo h4 {
-    margin-left: 20px;
+    margin-left: 10%;
   }
 
   .footer_main .logo_politic .logo span {
@@ -301,7 +306,7 @@
   }
 
   .contacts_div .contacts .time {
-    width: 190px;
+    width: 180px;
     margin: auto;
   }
 }
