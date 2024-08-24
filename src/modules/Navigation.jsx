@@ -35,7 +35,7 @@ const Navigation = () => {
       position: "absolute",
       zIndex: "11",
       width: "2px",
-      height: "55px",
+      height: "48px",
       transform: "rotate(45deg)",
       backgroundColor: "#ffffff",
       right: "22px",
@@ -46,7 +46,7 @@ const Navigation = () => {
       position: "absolute",
       zIndex: "11",
       width: "2px",
-      height: "55px",
+      height: "48px",
       transform: "rotate(135deg)",
       backgroundColor: "#ffffff",
       right: "22px",
@@ -59,29 +59,29 @@ const Navigation = () => {
 
     closedLinks = {
       display: "block",
-      backgroundColor: "#000",
-      borderColor: "#000",
+      background: 'linear-gradient(1turn, #111111, #3a3a3a)',
+      border: "none",
     };
     openLine1 = {
       position: "absolute",
       zIndex: "11",
-      width: "3px",
-      height: "40px",
+      width: "2px",
+      height: "36px",
       transform: "rotate(90deg)",
       backgroundColor: "#ffffff",
-      right: "22px",
-      top: "-4px",
+      right: "24px",
+      top: "-2px",
     };
 
     openLine2 = {
       position: "absolute",
       zIndex: "11",
-      width: "3px",
-      height: "40px",
+      width: "2px",
+      height: "36px",
       transform: "rotate(90deg)",
       backgroundColor: "#ffffff",
-      right: "22px",
-      top: "10px",
+      right: "24px",
+      top: "14px",
     };
   }
 
