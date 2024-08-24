@@ -127,6 +127,7 @@
 }
 
 @media screen and (width < 690px) {
+  
   .imgs_list button {
     height: 50px;
     width: 50px;
@@ -182,6 +183,6 @@
   }
 
   .imgs_list button {
-    top: -400px;
+    top: -380px;
   }
 }
