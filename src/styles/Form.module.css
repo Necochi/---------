@@ -179,7 +179,7 @@
       #bebb00,
       #fffa22 50%
     );
-    padding-left: 36%;
+    padding-left: 40%;
   }
 
   .form_flexDiv .btn_div button:hover {
@@ -218,5 +218,11 @@
   .form_div .btn_div {
     margin-inline: auto;
     width: 75%;
+  }
+}
+
+@media screen and (width < 590px) {
+  .form_flexDiv .btn_div button {
+    padding-left: 36%;
   }
 }

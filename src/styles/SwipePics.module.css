@@ -94,7 +94,6 @@
   object-fit: cover;
 }
 
-
 @media screen and (width < 920px) {
   .imgs_list .backImg {
     position: absolute;
@@ -127,7 +126,6 @@
 }
 
 @media screen and (width < 690px) {
-
   .imgs_list .backImg {
     position: absolute;
     object-fit: cover;
@@ -138,7 +136,7 @@
     margin-bottom: 230px;
     height: auto;
   }
-  
+
   .imgs_list button {
     height: 50px;
     width: 50px;

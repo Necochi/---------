@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from "react";
 
 const SwipePics = () => {
   const imgsArr = [
-    "./imgs/Slide2.jpg",
     "./imgs/Slide1.jpg",
+    "./imgs/Slide2.jpg",
     "./imgs/Slide3.jpg",
   ];
   const [id, setId] = useState(0);

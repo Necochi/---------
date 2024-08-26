@@ -26,7 +26,7 @@ const Contacts = () => {
             <li>
               <img src="/imgs/mail.svg" alt="локация" />
               <p>
-                <b>E-mail: </b>mailteplovoz24rf@yandex.ru
+                <b>E-mail: </b>teplovoz24rf@yandex.ru
               </p>
             </li>
             <li>

@@ -1,4 +1,11 @@
 import style from "../styles/Footer.module.css";
+import { NavLink } from "react-router-dom";
+const links = [
+  { path: "/", text: "Главная" },
+  { path: "about", text: "О компании" },
+  { path: "booking", text: "Аренда тепловозов" },
+  { path: "contact", text: "Контакты" },
+];
 
 const Footer = () => {
   return (
@@ -22,13 +29,19 @@ const Footer = () => {
           <div className={style.info}>
             <ul>
               <li>
-                <a href="/about">О компании</a>
+                <NavLink to={links[1].path}>
+                  <a href="#">{links[1].text}</a>
+                </NavLink>
               </li>
               <li>
-                <a href="/booking">Аренда тепловозов</a>
+                <NavLink to={links[2].path}>
+                  <a href="#">{links[2].text}</a>
+                </NavLink>
               </li>
               <li>
-                <a href="/contact">Контакты</a>
+                <NavLink to={links[3].path}>
+                  <a href="#">{links[3].text}</a>
+                </NavLink>
               </li>
             </ul>
           </div>
