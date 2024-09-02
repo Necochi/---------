@@ -8,29 +8,33 @@ const Form = () => {
   const [name, setName] = useState("");
   const [checked, setChecked] = useState(false);
   const [message, setMessage] = useState("");
+  const [send, setSend] = useState(null);
   const numberMask = "+7 (000) 000-00-00";
   const form = useRef();
 
   const checkForm = () => {
     if (tel.length === 18 && tel !== "" && name !== "" && checked) {
       console.log("nice!");
-      // emailjs
-      //   .sendForm(
-      //     "service_6cllipu",
-      //     "template_74lo1yr",
-      //     form.current,
-      //     "OcT-JT2wZQy8PvZqJ"
-      //   )
-      //   .then(
-      //     (result) => {
-      //       console.log(result);
-      //     },
-      //     (error) => {
-      //       console.log(error);
-      //     }
-      //   );
+      emailjs
+        .sendForm(
+          "service_6cllipu",
+          "template_74lo1yr",
+          form.current,
+          "OcT-JT2wZQy8PvZqJ"
+        )
+        .then(
+          (result) => {
+            console.log("all good");
+            console.log(result);
+            setSend(true);
+          },
+          (error) => {
+            console.log(error);
+          }
+        );
     } else {
       console.log("bad!");
+      setSend(false);
     }
   };
 
@@ -41,6 +45,29 @@ const Form = () => {
         <p>Оставьте заявку и мы подберем самый оптимальный вариант</p>
       </div>
       <div className={style.form_div}>
+        <p
+          style={{
+            fontWeight: "800",
+          }}
+        >
+          * - обязательно
+        </p>
+        <p
+          className={style.false_input}
+          style={{
+            display: !send && send !== null ? "block" : "none",
+          }}
+        >
+          Заполните все важные поля!
+        </p>
+        <p
+          className={style.true_input}
+          style={{
+            display: send && send !== null ? "block" : "none",
+          }}
+        >
+          Заявка отправлена!
+        </p>
         <form ref={form}>
           <label htmlFor="text">
             <input

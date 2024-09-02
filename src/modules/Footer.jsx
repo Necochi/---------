@@ -30,17 +30,23 @@ const Footer = () => {
             <ul>
               <li>
                 <NavLink to={links[1].path}>
-                  <a href="#" onClick={() => window.scrollTo(0, 0)}>{links[1].text}</a>
+                  <a href="#" onClick={() => window.scrollTo(0, 0)}>
+                    {links[1].text}
+                  </a>
                 </NavLink>
               </li>
               <li>
                 <NavLink to={links[2].path}>
-                  <a href="#" onClick={() => window.scrollTo(0, 0)}>{links[2].text}</a>
+                  <a href="#" onClick={() => window.scrollTo(0, 0)}>
+                    {links[2].text}
+                  </a>
                 </NavLink>
               </li>
               <li>
                 <NavLink to={links[3].path}>
-                  <a href="#" onClick={() => window.scrollTo(0, 0)}>{links[3].text}</a>
+                  <a href="#" onClick={() => window.scrollTo(0, 0)}>
+                    {links[3].text}
+                  </a>
                 </NavLink>
               </li>
             </ul>
