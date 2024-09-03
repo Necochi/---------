@@ -1,3 +1,4 @@
+import { useState } from "react";
 import style from "../styles/Footer.module.css";
 import { NavLink } from "react-router-dom";
 const links = [
@@ -8,8 +9,37 @@ const links = [
 ];
 
 const Footer = () => {
+  const [politic, setPolitic] = useState(false);
+  if (politic) {
+    document.body.style.overflowY = "hidden";
+  } else {
+    document.body.style.overflowY = "";
+  }
   return (
     <div className={style.footer_main}>
+      <div
+        className={style.black_block}
+        style={{
+          display: politic ? "block" : "none",
+        }}
+        onClick={() => setPolitic(false)}
+      ></div>
+      <div className={style.politic_div}
+      style={{
+        display: politic ? 'block' : 'none',
+      }}>
+        <button onClick={() => setPolitic(false)}>
+          <img src="/imgs/closeBtn.svg" alt="Закрыть" />
+        </button>
+        <div className={style.text}>
+          <h2>Политика обработки персональных данных</h2>
+          <p>Администрация гарантирует конфиденциальность получаемой информации. Обработка персональных данных осуществляется в целях эффективного исполнения заказов, договоров и иных обязательств, принятых Администрацией в качестве обязательных к исполнению.</p>
+          <p>Настоящее согласие распространяется на следующие Ваши персональные данные: фамилия, имя и отчество, адрес электронной почты, контактный телефон.</p>
+          <p>Обращаем ваше внимание, что отзыв согласия на обработку персональных данных влечёт за собой удаление записей, содержащих ваши персональные данные в системах обработки персональных данных Администрации.</p>
+          <p>Гарантирую, что представленная мной информация является полной, точной и достоверной, а также что при представлении информации не нарушаются действующее законодательство Российской Федерации, законные права и интересы третьих лиц. Вся представленная информация заполнена мною в отношении себя лично.</p>
+          <p>Настоящее согласие действует в течение всего периода хранения персональных данных, если иное не предусмотрено законодательством Российской Федерации.</p>
+        </div>
+      </div>
       <div className={style.footer_block}>
         <div className={style.logo_politic}>
           <div className={style.logo}>
@@ -21,7 +51,7 @@ const Footer = () => {
           </div>
           <div className={style.politic}>
             <span>© Промтранс-СП 2019-2024</span>
-            <button>Политика обработки персональных данных</button>
+            <button onClick={() => setPolitic(true)}>Политика обработки персональных данных</button>
           </div>
         </div>
         <div className={style.about_div}>

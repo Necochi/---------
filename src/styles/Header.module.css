@@ -189,6 +189,20 @@
   z-index: 10;
 }
 
+.form .false_input {
+  text-align: center;
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.form .true_input {
+  text-align: center;
+  color: #00c900;
+  font-weight: 700;
+  font-size: 24px;
+}
+
 @media screen and (width < 990px) {
 
   .logo_contacts {
