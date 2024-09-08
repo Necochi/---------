@@ -17,10 +17,10 @@ const Header = () => {
       console.log("nice!");
       emailjs
         .sendForm(
-          "service_6cllipu",
-          "template_cc01fqb",
+          "service_tdlhokx",
+          "template_wim6ssr",
           form.current,
-          "OcT-JT2wZQy8PvZqJ"
+          "ihQVhtzRKs7BPxNN3"
         )
         .then(
           (result) => {

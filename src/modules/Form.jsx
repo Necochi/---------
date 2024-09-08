@@ -17,10 +17,10 @@ const Form = () => {
       console.log("nice!");
       emailjs
         .sendForm(
-          "service_6cllipu",
-          "template_74lo1yr",
+          "service_tdlhokx",
+          "template_ax0d4a7",
           form.current,
-          "OcT-JT2wZQy8PvZqJ"
+          "ihQVhtzRKs7BPxNN3"
         )
         .then(
           (result) => {
